@@ -1,16 +1,153 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Whitney", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
 }
 
-.clearfix:after{                         
-  display: table;
+.clearfix::after {
   content: "";
+  display: table;
   clear: both;
 }
 
-body{
-  max-width: 1200px;
+.container {
+  max-width: 1400px;
   margin: 0 auto;
+}
+
+/* Utilities */
+
+.calc-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.pos-abs {
+  position: absolute;
+}
+.pos-rel {
+  position: relative;
+}
+.col {
+  float: left;
+}
+.display-ib {
+  display: inline-block;
+}
+.txt-center {
+  text-align: center;
+}
+.v-a-middle {
+  vertical-align: middle;
+}
+
+.no-txtdec {
+  text-decoration: none;
+}
+.font-white {
+  color: white;
+}
+.font-black {
+  color: black;
+}
+.font-25 {
+  font-size: 25px;
+}
+.font-60 {
+  font-size: 60px;
+}
+.font-w-700 {
+  font-weight: 700;
+}
+
+.pad-100 {
+  padding: 0 100px;
+}
+.marg-top30 {
+  margin-top: 30px;
+}
+.marg-bot30 {
+  margin-bottom: 30px;
+}
+.w-25 {
+  width: 25%;
+}
+.w-50 {
+  width: 50%;
+}
+.h-30 {
+  height: 30px;
+}
+
+.button {
+  display: inline-block;
+  padding: 5px 30px;
+  background-color: white;
+}
+
+.bord-rad-20 {
+  border-radius: 20px;
+}
+.bord-rad-40 {
+  border-radius: 40px;
+}
+li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+/* header {
+  background-image: url("../img/jumbo.png");
+  background-size: contain;
+  background-repeat: no-repeat; 
+}*/
+
+/* Header-Nav */
+header {
+  position: relative;
+  display: block;
+}
+.fixed-header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: #255ee9;
+  line-height: 100px;
+  height: 100px;
+}
+.nav-point {
+  font-size: 18px;
+  margin: 0 10px;
+  font-weight: 500;
+}
+a.log-in {
+  line-height: 30px;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+#jumbotron {
+  position: relative;
+  top: 100px;
+  height: 600px;
+  background-image: url("../img/jumbo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.subtitle-p {
+  line-height: 30px;
+  font-size: 20px;
+}
+
+div.jumbo-button {
+  height: 60px;
+  margin: 0 20px;
+  line-height: 60px;
+}
+
+a.open-dweb {
+  background-color: #23272a;
 }
