@@ -96,24 +96,27 @@
 .font-25 {
   font-size: 25px;
 }
-.font-60 {
-  font-size: 60px;
+.font-35 {
+  font-size: 35px;
 }
 .font-50 {
   font-size: 50px;
+}
+.font-60 {
+  font-size: 60px;
 }
 
 .pad-100 {
   padding: 0 100px;
 }
-.pad-topbot100 {
-  padding: 100px 0;
+.pad-topbot200 {
+  padding: 200px 0;
 }
 .pad-topbot20 {
   padding: 20px 0;
 }
-.pad-top140 {
-  padding-top: 140px;
+.pad-top240 {
+  padding-top: 240px;
 }
 .pad-r20 {
   padding-right: 20px;
@@ -265,4 +268,18 @@ div.select-lang img {
   width: 5%;
   height: 50%;
   vertical-align: middle;
+}
+
+div.social i {
+  margin-right: 20px;
+}
+
+.gray-wave {
+  filter: invert(0.9599);
+  margin-bottom: -5px;
+}
+
+.white-wave {
+  filter: invert(0.9599);
+  transform: rotate(180deg);
 }
