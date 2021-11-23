@@ -2,8 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Whitney", "Helvetica Neue", "Helvetica",
-    "Arial", sans-serif;
+  font-family: "Open-sans", sans-serif;
 }
 
 .clearfix::after {
@@ -30,21 +29,48 @@
 .pos-rel {
   position: relative;
 }
+.row {
+  width: 100%;
+}
 .col {
   float: left;
+}
+.col-right {
+  float: right;
 }
 .display-ib {
   display: inline-block;
 }
+.display-b {
+  display: block;
+}
 .txt-center {
   text-align: center;
 }
-.v-a-middle {
+/* .v-a-middle {
   vertical-align: middle;
+} */
+.v-a-middle {
+  vertical-align: bottom;
+}
+.bgc-gray {
+  background-color: #f6f6f6;
+}
+.bgc-lilla {
+  background-color: #8ea1e1;
+}
+.bgc-white {
+  background-color: white;
+}
+.postop-100 {
+  top: 100px;
 }
 
 .no-txtdec {
   text-decoration: none;
+}
+.border-lilla {
+  border: 1px groove #8ea1e1;
 }
 .font-white {
   color: white;
@@ -52,41 +78,92 @@
 .font-black {
   color: black;
 }
+.font-gray {
+  color: #23272a;
+}
+.font-lilla {
+  color: #8ea1e1;
+}
+.bgc-darkgray {
+  background-color: #23272a;
+}
+.font-w700 {
+  font-weight: 700;
+}
+.font-20 {
+  font-size: 18px;
+}
 .font-25 {
   font-size: 25px;
 }
 .font-60 {
   font-size: 60px;
 }
-.font-w-700 {
-  font-weight: 700;
+.font-50 {
+  font-size: 50px;
 }
 
 .pad-100 {
   padding: 0 100px;
 }
+.pad-topbot100 {
+  padding: 100px 0;
+}
+.pad-topbot20 {
+  padding: 20px 0;
+}
+.pad-top140 {
+  padding-top: 140px;
+}
+.pad-r20 {
+  padding-right: 20px;
+}
+
+.marg-autolr {
+  margin: 0 auto;
+}
 .marg-top30 {
   margin-top: 30px;
+}
+.marg-top100 {
+  margin-top: 100px;
 }
 .marg-bot30 {
   margin-bottom: 30px;
 }
+.marg-bot100 {
+  margin-bottom: 100px;
+}
 .w-25 {
   width: 25%;
+}
+.w-33 {
+  width: calc(100% / 3);
+}
+.w-40 {
+  width: 40%;
 }
 .w-50 {
   width: 50%;
 }
+.w-60 {
+  width: 60%;
+}
 .h-30 {
   height: 30px;
+}
+.h-600 {
+  height: 600px;
+}
+
+.lh-30 {
+  line-height: 30px;
 }
 
 .button {
   display: inline-block;
   padding: 5px 30px;
-  background-color: white;
 }
-
 .bord-rad-20 {
   border-radius: 20px;
 }
@@ -129,7 +206,6 @@ a.log-in {
 }
 
 #jumbotron {
-  position: relative;
   top: 100px;
   height: 600px;
   background-image: url("../img/jumbo.png");
@@ -150,4 +226,43 @@ div.jumbo-button {
 
 a.open-dweb {
   background-color: #23272a;
+}
+
+/* Section Where-to-talk */
+
+img[src^="img/item"] {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  object-position: right;
+}
+
+.stars {
+  background-image: url("../img/stars.svg");
+  background-size: contain;
+  height: 50px;
+  margin: 0 auto;
+  width: 35%;
+}
+
+a.pad-topbot20 {
+  padding: 20px 30px;
+}
+
+#language {
+  background-color: #23272a;
+  color: white;
+  border: 0px;
+  font-size: 16px;
+}
+
+.select-lang {
+  height: 30px;
+  line-height: 30px;
+}
+
+div.select-lang img {
+  width: 5%;
+  height: 50%;
+  vertical-align: middle;
 }
